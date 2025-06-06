@@ -1,0 +1,480 @@
+/* === Global Styles for Page Background and Font === */
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(to bottom, whitesmoke, gray);
+  min-height: 100vh;
+  background-attachment: fixed;
+  color: #222;
+}
+
+/* === Header Section === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* Navbar */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Auth Buttons */
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background-color: #4A75C9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  background-color: #3f65ad;
+}
+
+/* === Main Section === */
+main {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.explore-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #4A75C9;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #365ca0;
+}
+
+/* === Footer === */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: white;
+  padding: 40px 20px;
+/*  margin-top: 100px;*/
+  border-top: 4px solid #4A75C9;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+  color: #0288D1;
+}
+
+footer a {
+  display: block;
+  margin-bottom: 8px;
+  color: #4A75C9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-links img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* === Donation Section === */
+.donation-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.donation-type button {
+  background-color: #dbe3ed;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.donation-type .active {
+  background-color: #a0b3d6;
+}
+
+.donation-amounts {
+  margin-top: 20px;
+}
+
+.donation-amounts button {
+  background-color: white;
+  border: 2px solid #dbe3ed;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.donation-amounts .active {
+  background-color: #0056f7;
+  color: white;
+  border: none;
+}
+
+.custom-amount {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-amount span {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.custom-amount input {
+  width: 80px;
+  padding: 6px;
+  text-align: center;
+  border: 2px solid #dbe3ed;
+  border-radius: 6px;
+}
+
+.donate-button {
+  margin-top: 20px;
+  background-color: #a0b3d6;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Topnav Hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* === Payment Section === */
+.payment-section {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: left;
+  width: 320px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section h2 {
+  text-align: center;
+  color: #4A75C9;
+}
+
+.payment-form .form-group {
+  margin-bottom: 15px;
+}
+
+.payment-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dbe3ed;
+  border-radius: 6px;
+}
+
+.payment-form .form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.card-logos {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-logos img {
+  height: 30px;
+  margin: 5px;
+}
+
+.pay-button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #4A75C9;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Logout Button */
+.logout-btn {
+  margin-left: 200px;
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* === General Inputs === */
+input {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+/* === Health Section (Invalid Selector Fixed) === */
+.health {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Centered Content Block === */
+.right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Main Title */
+.main-topic {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px #c8e6c9;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* === Images === */
+img {
+  max-width: 95%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Footer Developer Note === */
+#Myfooter {
+  font-size: 3vh;
+  color: blue;
+  text-align: left;
+  padding: 10px;
+}
+
+/* === Group Members' Pics === */
+#swan, #lwin, #thiri {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#swan:hover, #lwin:hover, #thiri:hover {
+  transform: scale(1.05);
+}
+
+/* === Plastic Pollution Section === */
+.plastic-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  margin: 50px auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 950px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+}
+
+.plastic-section h2,
+.plastic-section h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #004d40;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.plastic-section .lead {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.plastic-section .highlight {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.plastic-section img {
+  width: 70%;
+  height: auto;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Detail page */
+.hero {
+      background: url(Images/f922b43d9efdb857ea6c1221a0843e41.jpg);
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      margin-bottom: 10px;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+    }
+
+
+    .main {
+      display: flex;
+      padding: 30px;
+    }
+
+    .carousel {
+      flex: 3;
+      background: #eaf0f6;
+      padding: 20px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .sidebar {
+      flex: 1;
+      background: #fdf2e9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .content {
+      padding: 30px;
+      background: #ffffff;
+    }
+
+    .hover-box {
+      background: #f5f5f5;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .hover-box:hover {
+      background-color: #e0e0e0;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      padding: 30px;
+      text-align: ;
+    }
+
+    .card {
+      flex: 1;
+      background: #f1f3f5;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+     width:inherit;
+     height:auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card p {
+      padding: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+
+.plastic-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content-details{
+  text-align: left;
+}

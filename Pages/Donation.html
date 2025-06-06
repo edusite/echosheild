@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../Images/Ict logo.png">
+  <script>
+    if (!localStorage.getItem('loggedIn')) {
+      window.location.href = 'login.html';
+    }
+  </script>
+  <meta charset="UTF-8">
+  <title>Donation - EcoShield</title>
+  <link rel="stylesheet" href="../Css-folder/style.css">
+</head>
+<body>
+  <header>
+    <img src="../Images/Ict Logo.png" alt="EcoShield Logo" class="logo">
+    <nav>
+      <a href="../index.html">Home</a>
+            <a href="../Pages/about.html">About</a>
+            <a href="../Pages/contact.html">Contact</a>
+            <a href="../Pages/info.html">Detail</a>
+            <a href="../Pages/donation.html">Donation</a>
+    </nav>
+  </header>
+ 
+  <main>
+    <p>Donate to help us protect the planet!</p>
+ 
+    <div class="donation-container">
+      <div class="donation-type">
+        <button id="give-today" class="active">Give today</button>
+        <button id="give-monthly">Give Monthly</button>
+      </div>
+ 
+      <div class="donation-amounts">
+        <button class="amount-btn" data-amount="5">$5</button>
+        <button class="amount-btn active" data-amount="20">$20</button>
+        <button class="amount-btn" data-amount="50">$50</button>
+        <button class="amount-btn" data-amount="100">$100</button>
+        <button class="amount-btn" data-amount="other">Other</button>
+      </div>
+ 
+      <div class="custom-amount">
+        <span>$</span>
+        <input id="custom-amount" type="number" value="20">
+        <span>USD</span>
+      </div>
+ 
+      <h2>Payment Information</h2>
+      <form class="payment-form">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" required>
+        </div>
+ 
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" required>
+        </div>
+ 
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+        </div>
+ 
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" required>
+          </div>
+        </div>
+ 
+        <div class="form-group card-logos">
+          <img src="../Images/visa.png" alt="Visa">
+          <img src="../Images/mastercard.png" alt="MasterCard">
+          <img src="../Images/amex.png" alt="American Express">
+          <img src="../Images/discover.png" alt="Discover">
+          <img src="../Images/paypal.png" alt="Paypal">
+        </div>
+ 
+        <button type="submit" class="pay-button">Pay Now</button>
+      </form>
+    </div>
+  </main>
+   <main>
+    <form action="https://formsubmit.co/el/sohumo
+" method="POST">
+      <label>Please type your feedback here!:</label><br>
+      <textarea name="message" rows="5" cols="40" required></textarea><br>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <a href="https://formsubmit.co/el/sohumo">Send</a>
+    </form>
+  </main>
+ 
+
+  <footer>
+    <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:swannickwhile@gmail.com">swannickwhile@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+959793241635">+95 979 324 1635</a></p>
+        <a href="https://edusn-my.sharepoint.com/:w:/g/personal/swanphyohtet_edusn_onmicrosoft_com/EXbNnEnsbJVMgoWQLd6KKpwBv8Nefg0Y6AIdYowiVMZsfA?wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1748306984280&web=1">https://edusn-my.sharepoint.com/:w:/g/personal/swanphyohtet_edusn_onmicrosoft_com/EXbNnEnsbJVMgoWQLd6KKpwBv8Nefg0Y6AIdYowiVMZsfA?wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1748306984280&web=1</a>
+    <div class="useful-links">
+      <h2>Useful Links</h2>
+      <a href="../index.html">Home</a>
+            <a href="../index.html">Home</a>
+            <a href="../Pages/about.html">About</a>
+            <a href="../Pages/contact.html">Contact</a>
+            <a href="../Pages/info.html">Detail</a>
+            <a href="../Pages/donation.html">Donation</a>
+    </div>
+    <div class="social-links">
+      <h2>Our Social network</h2>
+      <a href="https://www.facebook.com/groups/3009719102535732/?ref=share&mibextid=NSMWBT"><img src="../Images/facebook.png" alt="Facebook">
+      <a href="https://discord.gg/4Py68HX9"><img src="../Images/discord.png" alt="Discord">
+      <img src="../Images/instagram.png" alt="Instagram">
+      <a href="https://www.tiktok.com/@yourgeometryteacher"><img src="../Images/tiktok.png" alt="TikTok">
+    </div>
+    <footer id="Myfooter"><p id="Myfooter">@Copyright 2025 www.ecoshield.co.com All rights reserved. Developed by Sangria Y7 room 5</p></footer>
+  </footer>
+ 
+  <!-- BUTTON FIXING SCRIPT -->
+  <script>
+    // Toggle Give type
+    document.getElementById('give-today').addEventListener('click', () => {
+      document.getElementById('give-today').classList.add('active');
+      document.getElementById('give-monthly').classList.remove('active');
+    });
+ 
+    document.getElementById('give-monthly').addEventListener('click', () => {
+      document.getElementById('give-monthly').classList.add('active');
+      document.getElementById('give-today').classList.remove('active');
+    });
+ 
+    // For Handle amount buttons
+    document.querySelectorAll('.amount-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active')); /*forEach -used to get the every single value from each data*/
+        btn.classList.add('active');
+ 
+        const amount = btn.dataset.amount;
+        if (amount === 'other') {
+          document.getElementById('custom-amount').value = '';
+          document.getElementById('custom-amount').focus();
+        } else {
+          document.getElementById('custom-amount').value = amount;
+        }
+      });
+    });
+ 
+    // Handle form submit
+    document.querySelector('.payment-form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you for your donation!');
+    });
+  </script>
+</body>
+</html>
